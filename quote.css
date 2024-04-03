@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --color-primary: #f5e763;
+  --text-dark: #414141;
+  --text-grey: #666666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-primary);
+  transition: all 1.5s;
+}
+
+.card {
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  min-height: 290px;
+  background-color: #ffffff;
+  border: 8px solid #414141;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 26px 20px;
+}
+
+.card .card-text {
+  display: block;
+  height: fit-content;
+}
+
+.card-text .card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--text-dark);
+}
+
+.card-text .card-subtitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  row-gap: 6px;
+  width: 100%;
+}
+
+.card-text .card-subtitle .quotes-text {
+  font-size: 20px;
+  color: var(--text-dark);
+}
+
+.card-text .card-subtitle .quotes-author {
+  color: var(--text-grey);
+}
+
+.hr {
+  height: 1px;
+  background: var(--text-grey);
+}
+
+.card .hr {
+  margin-top: auto;
+}
+
+.card .card-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.card .card-button {
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: var(--color-primary);
+  border-radius: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
